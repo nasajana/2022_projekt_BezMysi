@@ -1,0 +1,10 @@
+a{
+    text-decoration: underline;
+    &:hover{
+        text-decoration: none;
+    }
+    &:focus{
+        text-decoration: none;
+        outline: 2px dotted black;
+    }
+}
