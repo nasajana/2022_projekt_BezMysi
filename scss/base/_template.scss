@@ -25,11 +25,16 @@ body{
 }
 
 .main__content{
-    flex: 1 1 75%;   
+    flex: 1 1 75%;
+    padding: variables.$space-s; 
+    @media screen and (min-width: variables.$min-xl-media) {
+        margin-right: variables.$space-l;
+    }
 }
 
 .r-sidebar{
     flex: 1 1 25%;
+    padding: variables.$space-s;
       
     @media (max-width: variables.$max-md-media) {
         display: none;

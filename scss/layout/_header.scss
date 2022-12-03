@@ -1,0 +1,32 @@
+@use '../base/variables';
+
+.header{
+}
+
+.header__content {
+    
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.logo{
+    width: 120px;
+    height: auto;
+    margin: variables.$space-s;
+    
+    & img{
+        width: 100%;
+    }
+}
+
+.hero{
+    max-width: variables.$min-xl-media;
+    margin: auto;
+    //prostor pro obrázek
+    & img{
+       height: 400px;
+    }
+}

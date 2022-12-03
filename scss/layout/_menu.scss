@@ -1,0 +1,21 @@
+@use '../base/variables';
+
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+    
+    & a {
+        display: block;
+        padding: variables.$space-s;
+        color: rgb(0, 69, 154);
+        text-decoration: none;
+    }
+    
+    & a:hover {
+        background-color: white;
+        color: #00436f;
+    }
+}
+
