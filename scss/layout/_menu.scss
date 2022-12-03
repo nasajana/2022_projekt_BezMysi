@@ -1,10 +1,14 @@
 @use '../base/variables';
 
-.menu {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
+
+.menu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu {
+    list-style: none;
     
     & a {
         display: block;

@@ -1,0 +1,39 @@
+@use '../base/variables';
+
+.footer__content{
+    background-color: yellow;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: variables.$space-m;
+    
+    & .secondary-nav,
+    & .vymyslim {
+        grid-column: 1 / -1;
+        grid-row: auto;
+
+        @media screen and (min-width: variables.$min-md-media) {
+            grid-column: span 1;
+     
+         }
+    }
+}
+
+.secondary-menu {
+    padding-left: 40px;
+	list-style: disc;
+	display: flex;
+    flex-direction: column;
+    
+    & a {
+        color: rgb(171, 192, 37);
+        text-decoration: none;
+    }
+    
+    & a:hover {
+        background-color: white;
+        color: #00436f;
+    }
+}
