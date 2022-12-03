@@ -1,6 +1,16 @@
+@use '../base/variables';
 
+p, a{
+    font-family: variables.$font-family-body;
+    font-weight: variables.$font-weight-normal;
+    font-size: variables.$font-size-default;
+    line-height: variables.$line-height-default;
 
+}
 
 .section__header{
-    font-size: 34px;
+    font-family: variables.$font-family-headings;
+    font-weight: variables.$font-weight-headings;
+    font-size: 3em;
 }
+
