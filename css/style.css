@@ -29,10 +29,6 @@ body {
   width: 100vw;
 }
 
-.header {
-  flex: 0 0 200px;
-}
-
 .wrapper {
   flex: 1 1 100%;
   display: flex;
