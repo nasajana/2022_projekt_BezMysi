@@ -4,5 +4,7 @@ layout: layouts/vychozi_sablona.njk
 
 <div class="wrapper">
     {{ content | safe }}
-    {% include 'partials/aside-01.njk' %}
+    <aside class="r-sidebar">
+        {% include 'partials/aside-01.njk' %}
+    </aside>
 </div>

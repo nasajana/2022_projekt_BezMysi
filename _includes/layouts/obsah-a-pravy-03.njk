@@ -3,15 +3,8 @@ layout: layouts/vychozi_sablona.njk
 ---
 
 <div class="wrapper">
-    {{ content | safe}}
+    {{ content | safe }}
     <aside class="r-sidebar">
-        <p>
-            boční panel 03
-        </p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam provident, ipsum alias ab cumque sit sint vitae ut
-            dignissimos totam velit ex tempore voluptate quas natus labore, doloremque cupiditate quaerat?</p>
-        <button class="success__btn">
-            úspěch
-        </button>
+        {% include 'partials/aside-03.njk' %}
     </aside>
 </div>
