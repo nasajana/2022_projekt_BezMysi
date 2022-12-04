@@ -1,10 +1,8 @@
 ---
-layout: layouts/vychozi_sablona.njk
+layout: layouts/obsah.njk
 ---
 
-<div class="wrapper">
-    {{ content | safe }}
-    <aside class="r-sidebar">
-        {% include 'partials/aside-02.njk' %}
-    </aside>
-</div>
+{{ content | safe }}
+<aside class="r-sidebar">
+    {% include 'partials/aside-02.njk' %}
+</aside>

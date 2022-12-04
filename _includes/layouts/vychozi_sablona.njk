@@ -10,11 +10,5 @@
         </style>
         <link rel="stylesheet" href="/css/style.css">
     </head>
-    <body>
-        <div class="my-template">
-            {% include 'partials/header.njk' %}
-            {{ content | safe }}
-            {% include 'partials/footer.njk' %}
-        </div>
-    </body>
+    {{ content | safe }}
 </html>
