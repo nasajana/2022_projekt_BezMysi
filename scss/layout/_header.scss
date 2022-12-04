@@ -22,11 +22,3 @@
     }
 }
 
-.hero{
-    max-width: variables.$min-xl-media;
-    margin: auto;
-    //prostor pro obrázek
-    & img{
-       height: 400px;
-    }
-}

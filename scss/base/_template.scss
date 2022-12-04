@@ -27,9 +27,6 @@ body{
 .main{
     flex: 1 1 75%;
     padding: variables.$space-s; 
-    @media screen and (min-width: variables.$min-xl-media) {
-        margin-right: variables.$space-l;
-    }
 }
 
 .r-sidebar{

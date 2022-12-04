@@ -48,11 +48,6 @@ body {
   flex: 1 1 75%;
   padding: 10px;
 }
-@media screen and (min-width: 1100px) {
-  .main {
-    margin-right: 20px;
-  }
-}
 
 .r-sidebar {
   flex: 1 1 25%;
@@ -96,14 +91,6 @@ p, a {
 }
 .logo img {
   width: 100%;
-}
-
-.hero {
-  max-width: 1100px;
-  margin: auto;
-}
-.hero img {
-  height: 400px;
 }
 
 .menu {
