@@ -5,9 +5,7 @@ layout: layouts/vychozi_sablona.njk
 <body>
     <div class="my-template">
         {% include 'partials/header-hmpg.njk' %}
-        <div class="wrapper">
-            {{ content | safe }}
-        </div>
+        {{ content | safe }}
         {% include 'partials/footer.njk' %}
     </div>
 </body>
