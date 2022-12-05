@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+   
 }
 
 .main-menu {
@@ -13,8 +14,8 @@
     
     & a {
         display: block;
-        padding: variables.$space-s;
-        color: rgb(0, 69, 154);
+        padding: variables.$space-l;
+        color: colors.$primary-color;
         text-decoration: none;
     }
     

@@ -4,7 +4,8 @@ layout: layouts/vychozi_sablona.njk
 
 <body>
     <div class="my-template">
-        {% include 'partials/header-hmpg.njk' %}
+        {% include 'partials/header.njk' %}
+        {% include 'partials/hero.njk' %}
         {{ content | safe }}
         {% include 'partials/footer.njk' %}
     </div>

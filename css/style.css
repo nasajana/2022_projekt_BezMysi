@@ -77,6 +77,7 @@ p, a {
   justify-content: space-between;
   align-items: center;
   max-width: 1400px;
+  min-height: 60px;
   margin: auto;
 }
 
@@ -100,8 +101,8 @@ p, a {
 }
 .main-menu a {
   display: block;
-  padding: 10px;
-  color: rgb(0, 69, 154);
+  padding: 20px;
+  color: #0c5880;
   text-decoration: none;
 }
 .main-menu a:hover {
@@ -165,10 +166,11 @@ a:focus {
 }
 
 /* dočasné styly a pokusy*/
-header {
-  background-color: rgb(203, 161, 241);
+/*
+.header__content{
+    background-color: rgb(203, 161, 241);
 }
-
+*/
 .main {
   background-color: aquamarine;
 }
