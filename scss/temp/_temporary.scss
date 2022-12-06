@@ -24,3 +24,49 @@ p::selection{
 	color: rgb(115, 49, 2);
 }
 /* konec dočasné styly */
+
+.hero{
+    background-color: lightblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+
+    &__content{
+      
+        max-width: 1400px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+
+  
+  
+    }
+
+    &__img{
+        flex: 1 1 40%;
+ 
+
+        & img{
+            width: 100%;
+        }
+
+    }
+    &__text{
+        flex: 1 1 60%;
+        text-align: right;
+        padding-right: 5vw;
+    }
+
+    & .text-bigger{
+        font-size: 32px;
+
+    }
+    & .text-big{
+        font-size: 20px;
+ 
+    }
+}
+.crossed{
+    text-decoration:line-through;
+}

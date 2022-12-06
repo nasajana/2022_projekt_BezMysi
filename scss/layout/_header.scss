@@ -4,17 +4,16 @@
     
     display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
     max-width: 1400px;
     min-height: 60px;
     margin: auto;
 }
 
 .logo{
-    width: 120px;
+    width: 160px;
     height: auto;
-    margin: variables.$space-s;
-    
+        
     & img{
         width: 100%;
     }
