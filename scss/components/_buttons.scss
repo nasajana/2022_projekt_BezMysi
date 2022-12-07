@@ -1,7 +1,8 @@
 @use '../base/variables';
+@use '../utility/colors';
 
 .success__btn{
-    background-color: variables.$btn-color;
+    background-color: colors.$btn-color;
     color: rgb(174, 194, 22);
     padding: 20px;
 }
