@@ -6,11 +6,12 @@
 @use 'utility/fonts';
 
 @use 'layout/header';
-@use 'layout/menu';
 @use 'layout/hero';
 @use 'layout/sidebar';
 @use 'layout/footer';
 
+@use 'components/menu';
+@use 'components/hamburger';
 @use 'components/buttons';
 @use 'components/links';
 @use 'components/lists';

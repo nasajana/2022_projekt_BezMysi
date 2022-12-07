@@ -1,61 +1,7 @@
 @use '../base/variables';
 @use '../utility/colors';
 
-
-.main-nav{
-    display: none;
-    @media screen and (min-width: variables.$min-md-media){
-        display:flex;
-    }
-  }
-
-  
-  
-  .menu{
-      margin: 0;
-      padding: 0;
-      display: flex;
-      
-    }
-    
-    .main-menu {
-        list-style: none;
-        margin: 0.75em 0;
-        
-        & a {
-            display: block;
-            padding: 5px 10px;
-            color: colors.$lightbluegray;
-            text-decoration: none;
-            font-size: 1.2em;
-        border-bottom: 3px solid transparent;
-        
-    }
-    
-    & a:hover {
-        border-bottom: 3px solid colors.$bg-color;
-        color: colors.$bg-color;
-        transition: all 0.5s;
-    }
-}
-
-.secondary-menu {
-    padding-left: 40px;
-	list-style: disc;
-	display: flex;
-    flex-direction: column;
-    
-    & a {
-        color: colors.$bg-light;
-        text-decoration: none;
-    }
-    
-    & a:hover {
-        background-color: white;
-        color: #00436f;
-    }
-}
-
+// převzeto s vlastními úpravami barev a chování, názvy tříd a celé scss neladí, předělám až zbyde čas...
 
 .hamburger-container{
     @media screen and (min-width: variables.$min-md-media){
@@ -102,6 +48,8 @@
   /* Make the focusable elements in the drawer visible when it is open. */
   .hamburger-container .checkbox:checked ~ .drawer a {
     visibility: visible;
+    // vlastní barva odkazů
+    color: colors.$lightbluegray;
   }
   
   .hamburger-container .checkbox:checked ~ .drawer {
@@ -135,7 +83,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(255, 255, 255);
     transition: all 0.5s ease;
   }
   
@@ -151,7 +99,7 @@
     width: max-content;
     max-width: 100%;
     padding: 22px;
-    background: rgb(0, 124, 155);
+    background: colors.$primary-color;;
     transform: translateX(-100%);
     transition: transform 0.5s ease;
   }

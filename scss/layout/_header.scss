@@ -4,6 +4,8 @@
 .header{
     background-color: colors.$primary-color;
 
+// výchozí je hamburger 
+
     &__content {
        
         display: flex;
@@ -13,6 +15,9 @@
         max-width: 1400px;
         min-height: 60px;
         margin: auto;
+        padding: 15px;
+
+// jiné uspořádání pro desktop
 
         @media screen and (min-width: variables.$min-md-media){
             flex-direction: row;
@@ -21,6 +26,7 @@
     }
 }
 
+/* velikost obrázku - loga */
 .logo{
     width: 160px;
     height: auto;
