@@ -32,16 +32,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-
+   
+}
+.card{
+    background-color: aquamarine;
     
-    & .card{
-        background-color: aquamarine;
+    
+    @media screen and (min-width: 900px){
         
-        
-        @media screen and (min-width: 900px){
-            
-            gap: 20px;
-        }
-        
+        gap: 20px;
     }
+    
 }
