@@ -26,7 +26,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 100vw;
 }
 
 .wrapper {
@@ -108,29 +107,42 @@ p::selection {
 .hero {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #f1f1f1;
 }
 .hero__content {
   max-width: 1400px;
   display: flex;
+  flex-direction: column-reverse;
   margin: auto;
   align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .hero__content {
+    flex-direction: row;
+  }
 }
 .hero__img {
   flex: 1 1 40%;
 }
 .hero__img img {
   width: 100%;
+  max-width: 400px;
 }
 .hero__text {
-  flex: 1 1 60%;
-  text-align: right;
-  padding-right: 5vw;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .hero__text {
+    flex: 1 1 60%;
+    text-align: right;
+    padding-right: 5em;
+  }
 }
 .hero .text-bigger {
-  font-size: clamp(24px, 3vw, 48px);
+  font-size: clamp(24px, 3vw, 36px);
 }
 .hero .text-big {
-  font-size: 20px;
+  font-size: 32px;
 }
 
 .crossed {
