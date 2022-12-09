@@ -2,6 +2,7 @@
 @use '../utility/colors';
 
 
+
 .hero{
 
     padding-top: 30px;
@@ -48,5 +49,5 @@
 .text-bg{
     font-weight: 700;
     display: inline-block;
-    background-color:peru;
+    background-color: colors.$warning;
 }

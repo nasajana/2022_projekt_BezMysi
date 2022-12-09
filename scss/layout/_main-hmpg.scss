@@ -1,0 +1,47 @@
+@use '../base/variables';
+@use '../utility/colors';
+@use '../utility/fonts';
+
+// postupně rozhodit
+//nastavení pro homepage
+
+.section{
+    max-width:1000px;
+    margin: auto;
+    
+    & p{
+        padding-top: 10px;
+    }
+    
+    &__item{
+        padding: 10px;
+        border: 1px solid red;
+
+    }
+    &__header{
+        text-align: center;
+        font-family: variables.$font-family-headings;
+        font-weight: variables.$font-weight-headings;
+        font-size: 3em;
+
+    }
+    
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    
+    & .card{
+        background-color: aquamarine;
+        
+        
+        @media screen and (min-width: 900px){
+            
+            gap: 20px;
+        }
+        
+    }
+}
