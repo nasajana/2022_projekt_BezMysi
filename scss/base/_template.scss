@@ -15,11 +15,11 @@ body{
     flex: 1 1 100%;
     display: flex;
     @media screen and (min-width: variables.$min-xl-media) {
-        max-width: 1400px;
+        max-width: 1000px;
         margin: auto;
     }
 }
-
+/*
 .main{
     flex: 1 1 75%;
     padding: variables.$space-s; 
@@ -35,7 +35,8 @@ body{
     }
     
 }
-
+*/
 .footer{
     flex: 0 0 100px;
 }
+
