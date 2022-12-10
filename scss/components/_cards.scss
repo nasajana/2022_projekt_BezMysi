@@ -40,7 +40,7 @@
         
     }
     &:hover {
-        box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, .2);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         transform: translateY(-4px);
     }
     @media screen and (min-width: variables.$min-xs-media){
@@ -61,6 +61,18 @@
         }
     }
 
+}
 
+.contact-card {
+    border: 1px solid colors.$lightbluegray;
 
+    @media screen and (min-width: variables.$min-xl-media){
+
+        width: 49%;
+    }
+    & img {
+
+   max-width: 150px;
+
+}
 }

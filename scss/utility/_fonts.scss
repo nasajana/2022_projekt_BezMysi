@@ -26,8 +26,20 @@ h1,
     font-weight: variables.$font-weight-headings;
     font-size: 3em;
     color: colors.$primary-color;
+
 }
 
+h1{
+    &:after{
+        content: '';
+        display: block;
+        height: 0.1em;
+        width: 3em;
+        margin-top: 10px;
+        background: colors.$accent;
+    }
+
+}
 h2,
 h3{
     font-family: variables.$font-family-headings;
