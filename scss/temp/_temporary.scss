@@ -8,7 +8,17 @@
 }
 */
 
+.d-flex{
+    display: flex;
+    & .img-left{
+        width: 25%;
+        
+    }
 
+    & img{
+        width: 100%;
+    }
+}
 
 
 

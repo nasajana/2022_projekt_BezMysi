@@ -65,6 +65,7 @@ p, a {
   font-weight: 400;
   font-size: 18px;
   line-height: calc(1.5em + 0.2vw);
+  margin-top: 1em;
 }
 
 p::-moz-selection {
@@ -230,42 +231,6 @@ h3 {
 }
 .section__header {
   text-align: center;
-}
-
-.cards {
-  max-width: 500px;
-  margin: auto;
-  text-align: center;
-  padding: 0 20px;
-}
-@media (min-width: 640px) {
-  .cards {
-    display: flex;
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
-    max-width: max-content;
-    gap: 20px;
-  }
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  margin: 15px 0;
-  padding: 15px;
-}
-.card:hover {
-  box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
-}
-@media (min-width: 640px) {
-  .card {
-    flex-direction: column;
-    justify-content: space-around;
-    flex: 1 1 33.333%;
-    margin: 0;
-  }
 }
 
 .main-grid {
@@ -460,9 +425,58 @@ a:focus {
   outline: 3px dotted #ff794d;
 }
 
+.cards {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 0 20px;
+}
+@media (min-width: 640px) {
+  .cards {
+    display: flex;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    gap: 20px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 15px 0;
+  padding: 15px;
+}
+.card:hover {
+  box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
+}
+@media (min-width: 640px) {
+  .card {
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1 1 33.333%;
+    margin: 0;
+  }
+}
+.card svg {
+  height: 5em;
+  padding: 1em;
+}
+
 /* dočasné styly a pokusy*/
 /*
 .header__content{
     background-color: rgb(203, 161, 241);
 }
-*//*# sourceMappingURL=style.css.map */
+*/
+.d-flex {
+  display: flex;
+}
+.d-flex .img-left {
+  width: 25%;
+}
+.d-flex img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

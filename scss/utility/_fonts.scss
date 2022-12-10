@@ -6,8 +6,10 @@ p, a{
     font-weight: variables.$font-weight-normal;
     font-size: variables.$font-size-default;
     line-height: variables.$line-height-default;
+    margin-top: 1em;
 
 }
+
 
 p::selection{
     background-color: yellow;
