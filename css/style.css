@@ -95,7 +95,7 @@ h3 {
   font-family: "Nunito", "Roboto", sans-serif;
   font-weight: 700;
   color: #0c5880;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 h2 {
@@ -425,44 +425,68 @@ a:focus {
   outline: 3px dotted #ff794d;
 }
 
-.cards {
-  max-width: 500px;
-  margin: auto;
-  text-align: center;
-  padding: 0 20px;
+.box {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
 }
-@media (min-width: 640px) {
+@media screen and (min-width: 800px) {
+  .box {
+    padding: 15px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+@media screen and (min-width: 1100px) {
   .cards {
-    display: flex;
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
-    max-width: max-content;
-    gap: 20px;
+    justify-content: space-between;
   }
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  margin: 15px 0;
-  padding: 15px;
+  width: 80%;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+.card a {
+  color: inherit;
+  text-decoration: none;
 }
 .card:hover {
-  box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
 }
-@media (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .card {
-    flex-direction: column;
-    justify-content: space-around;
-    flex: 1 1 33.333%;
-    margin: 0;
+    flex-direction: row;
+    text-align: left;
   }
 }
-.card svg {
-  height: 5em;
-  padding: 1em;
+@media screen and (min-width: 1100px) {
+  .card {
+    width: 32%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.card__title {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 800px) {
+  .card__title {
+    font-size: 2.5rem;
+  }
 }
 
 /* dočasné styly a pokusy*/

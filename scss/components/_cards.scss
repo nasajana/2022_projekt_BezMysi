@@ -2,15 +2,25 @@
 @use '../utility/colors';
 @use '../utility/fonts';
 
+
+.box {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+
+    @media screen and (min-width: variables.$min-md-media){
+        padding: 15px;
+    }
+  }
+
 .cards{
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-    padding: 0 20px;
-    @media (min-width: 640px) {
-        display: flex;
-        max-width: max-content;
-        gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
+    @media screen and (min-width: variables.$min-xl-media){
+        justify-content: space-between;
     }
 
 }
@@ -18,26 +28,39 @@
 .card{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    margin: 15px 0;
-    padding: 15px;
-    
-    &:hover{
-        box-shadow: 0px 4px 6px #407bff1f;
+    width: 80%;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    transition: transform .3s;
+    text-align: center;
+    & a {
+        color: inherit;
+        text-decoration: none;
+        
     }
-    @media (min-width: 640px) {
+    &:hover {
+        box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, .2);
+        transform: translateY(-4px);
+    }
+    @media screen and (min-width: variables.$min-xs-media){
+        flex-direction: row;
+        text-align: left;
+    }
+    @media screen and (min-width: variables.$min-xl-media){
+        width: 32%;
         flex-direction: column;
-        justify-content: space-around;
-        flex: 1 1 33.333%;
-        margin: 0;
-    
+        text-align: center;
+    }
+    &__title{
+        margin: 10px 0;
+        font-size: 1.5rem;
+
+        @media screen and (min-width: variables.$min-md-media) {
+            font-size: 2.5rem;
+        }
     }
 
-    & svg{
-        height: 5em;
-        padding: 1em;
-    }
 
 
 }
