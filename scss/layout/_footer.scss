@@ -4,28 +4,29 @@
 
 
 .footer{
-    background-color: colors.$primary-color;
-    color: colors.$bg-light;
-
+    background-color: colors.$bg-silver;
+    margin-top: 40px;
+    
     &__content{
+        color: colors.$primary-color;
         max-width: 1400px;
         margin: auto;
-        padding: 20px 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        gap: variables.$space-m;
-      
-        & .secondary-nav,
-        & .vymyslim {
-            grid-column: 1 / -1;
-            grid-row: auto;
-    
-            @media screen and (min-width: variables.$min-md-media) {
-                grid-column: span 1;
-         
-             }
+        padding: 40px 0;
+        & p{
+            text-align: center;
         }
+        
+    }
+    &__copy{
+        background-color: colors.$primary-color;
+        color: colors.$bg-light;
+        & p{
+            padding: 10px;
+            text-align: center;
+            font-size: 0.75em;
+
+        }
+        
     }
 }
 

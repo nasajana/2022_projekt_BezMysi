@@ -1,4 +1,5 @@
 @use '../base/variables';
+@use '../utility/colors';
 
 p, a{
     font-family: variables.$font-family-body;
@@ -13,5 +14,30 @@ p::selection{
     color: rgb(115, 49, 2);
 }
 
+a{
+    color: colors.$primary-color;
+}
 
+h1,
+.section__header{
+    font-family: variables.$font-family-headings;
+    font-weight: variables.$font-weight-headings;
+    font-size: 3em;
+    color: colors.$primary-color;
+}
+
+h2,
+h3{
+    font-family: variables.$font-family-headings;
+    font-weight: variables.$font-weight-headings;
+    color: colors.$primary-color;
+    margin-top: variables.$space-l;
+}
+
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.75em;
+}
 

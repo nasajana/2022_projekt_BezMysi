@@ -35,7 +35,7 @@ body {
 @media screen and (min-width: 1100px) {
   .wrapper {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
   }
 }
 
@@ -63,7 +63,7 @@ body {
 p, a {
   font-family: "Montserrat", "Noto Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: calc(1.5em + 0.2vw);
 }
 
@@ -75,6 +75,34 @@ p::-moz-selection {
 p::selection {
   background-color: yellow;
   color: rgb(115, 49, 2);
+}
+
+a {
+  color: #0c5880;
+}
+
+h1,
+.section__header {
+  font-family: "Nunito", "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: #0c5880;
+}
+
+h2,
+h3 {
+  font-family: "Nunito", "Roboto", sans-serif;
+  font-weight: 700;
+  color: #0c5880;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
 }
 
 .header {
@@ -163,26 +191,26 @@ p::selection {
 }
 
 .footer {
+  background-color: #f1f1f1;
+  margin-top: 40px;
+}
+.footer__content {
+  color: #0c5880;
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px 0;
+}
+.footer__content p {
+  text-align: center;
+}
+.footer__copy {
   background-color: #0c5880;
   color: #f0f5f9;
 }
-.footer__content {
-  max-width: 1400px;
-  margin: auto;
-  padding: 20px 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  gap: 15px;
-}
-.footer__content .secondary-nav, .footer__content .vymyslim {
-  grid-column: 1/-1;
-  grid-row: auto;
-}
-@media screen and (min-width: 800px) {
-  .footer__content .secondary-nav, .footer__content .vymyslim {
-    grid-column: span 1;
-  }
+.footer__copy p {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.75em;
 }
 
 .main {
@@ -202,9 +230,6 @@ p::selection {
 }
 .section__header {
   text-align: center;
-  font-family: "Nunito", "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 3em;
 }
 
 .cards {
@@ -245,23 +270,11 @@ p::selection {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 32px;
-}
-@media screen and (min-width: 800px) {
-  .main-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 .main-grid__header, .main-grid .full-row {
   grid-column: 1/-1;
-}
-@media (min-width: 1150px) {
-  .main-grid {
-    margin-left: -32px;
-    margin-right: -32px;
-  }
 }
 
 .main-nav {
@@ -452,11 +465,4 @@ a:focus {
 .header__content{
     background-color: rgb(203, 161, 241);
 }
-*/
-aside {
-  background-color: blue;
-}
-
-footer {
-  background-color: rgb(170, 157, 181);
-}/*# sourceMappingURL=style.css.map */
+*//*# sourceMappingURL=style.css.map */
