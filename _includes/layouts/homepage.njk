@@ -3,10 +3,19 @@ layout: layouts/vychozi_sablona.njk
 ---
 
 <body>
-    <div class="my-template">
+    <div
+        class="my-template">
+        <!-- ↓ hlavička ↓ -->
         {% include 'partials/header.njk' %}
+        <!-- ↑ hlavička ↑ -->
+        <!-- ↓ banner ↓ -->
         {% include 'partials/hero.njk' %}
+        <!-- ↑ banner ↑ -->
+        <!-- ↓ hlavní oblast ↓ -->
         {{ content | safe }}
-        {% include 'partials/footer.njk' %}
+        <!-- ↑ hlavní oblast ↑ -->
+        <!-- ↓ patička ↓ -->
+    {% include 'partials/footer.njk' %}
+        <!-- ↑ patička ↑ -->
     </div>
 </body>
