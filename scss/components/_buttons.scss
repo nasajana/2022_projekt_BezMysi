@@ -6,3 +6,23 @@
     color: rgb(174, 194, 22);
     padding: 20px;
 }
+
+.link-btn{
+    display: inline-block;
+    padding: 0.5em 2em;
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+.btn-brand-color{
+    background-color: colors.$btn-color;
+    color: colors.$bg-light;
+    text-decoration: none;
+    font-size: 1.2em;
+
+    &:hover,
+    &:focus{
+        background-color: colors.$accent;
+        color: colors.$primary-color;
+    }
+}
