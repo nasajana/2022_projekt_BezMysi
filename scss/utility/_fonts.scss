@@ -30,6 +30,15 @@ a{
     color: colors.$primary-color;
 }
 
+a[target="_blank"] {
+    background-image: url(/images/icons/external-icon.png);
+    background-size: 0.75em;
+    display: inline-block;
+    padding-right: 1.2em;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
 h1,
 .section__header{
     font-family: variables.$font-family-headings;
@@ -80,7 +89,30 @@ blockquote{
 .keyb{
     display: inline-block;
     padding: 2px 8px;
+    outline: 0;
     margin: 0 5px;
     border: 1px solid  #d8d8d8;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.kod{
+    display: inline-block;
+    padding: 0 8px;
+    margin: 0 5px;
+    background-color: rgb(15, 15, 15);
+    color: #eeeeee;
+}
+
+.tips{
+    background-color: #ffeeee;
+    padding: 20px;
+    text-align: center;
+
+    grid-column: 1 / -1;
+    &::before{
+        background-image: url(/images/icons/light.png);
+        padding-left: 1.2em;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
 }
