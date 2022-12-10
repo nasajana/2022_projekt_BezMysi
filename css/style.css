@@ -77,6 +77,11 @@ p::selection {
 
 .header {
   background-color: #0c5880;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  z-index: 3;
 }
 .header__content {
   display: flex;
@@ -176,6 +181,10 @@ p::selection {
   .footer__content .secondary-nav, .footer__content .vymyslim {
     grid-column: span 1;
   }
+}
+
+.main {
+  padding-top: 100px;
 }
 
 .section {
