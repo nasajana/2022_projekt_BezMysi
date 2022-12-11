@@ -10,6 +10,10 @@
     text-align: left;
 }
 
+.right{
+    text-align: right;
+}
+
 
 p, a{
     font-family: variables.$font-family-body;
@@ -86,20 +90,23 @@ blockquote{
     margin-bottom: 1em;
 }
 
-.keyb{
+.keyb {
     display: inline-block;
-    padding: 2px 8px;
-    outline: 0;
-    margin: 0 5px;
-    border: 1px solid  #d8d8d8;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-.kod{
-    display: inline-block;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    color: #36395A;
     padding: 0 8px;
     margin: 0 5px;
-    background-color: rgb(15, 15, 15);
+    border: 1px solid #d8d8d8;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;}
+  
+
+.kod{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 0 5px;
+    background-color: #292929;
     color: #eeeeee;
 }
 
@@ -107,6 +114,9 @@ blockquote{
     background-color: #ffeeee;
     padding: 20px;
     text-align: center;
+    & p{
+        margin: 0;
+    }
 
     grid-column: 1 / -1;
     &::before{

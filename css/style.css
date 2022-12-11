@@ -73,6 +73,10 @@ body {
   text-align: left;
 }
 
+.right {
+  text-align: right;
+}
+
 p, a {
   font-family: "Montserrat", "Noto Sans", sans-serif;
   font-weight: 400;
@@ -151,18 +155,21 @@ blockquote {
 
 .keyb {
   display: inline-block;
-  padding: 2px 8px;
-  outline: 0;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  color: #36395A;
+  padding: 0 8px;
   margin: 0 5px;
   border: 1px solid #d8d8d8;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 .kod {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8em;
   display: inline-block;
-  padding: 0 8px;
-  margin: 0 5px;
-  background-color: rgb(15, 15, 15);
+  padding: 0 5px;
+  background-color: #292929;
   color: #eeeeee;
 }
 
@@ -171,6 +178,9 @@ blockquote {
   padding: 20px;
   text-align: center;
   grid-column: 1/-1;
+}
+.tips p {
+  margin: 0;
 }
 .tips::before {
   background-image: url(/images/icons/light.png);
@@ -191,7 +201,7 @@ blockquote {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column;*/
   max-width: 1400px;
   min-height: 60px;
   margin: auto;
@@ -600,6 +610,12 @@ a:focus {
 }
 .contact-card:hover {
   background-color: #f5f5f5;
+}
+
+.player {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
 }
 
 /* dočasné styly a pokusy*/
