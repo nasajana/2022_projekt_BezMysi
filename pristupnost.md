@@ -13,6 +13,10 @@ title: Přístupnost
 
 ## Přístupnost je když ...
  ... když se uživatelé dostanou ke všem funkcím a informacím s vynaložením přiměřeného úsilí a v přiměřeném čase, bez ohledu na svůj handicap, vybavení a schopnosti.
+
+ Internetové stránky a mobilní aplikace subjektů veřejné správy musí být pro své uživatele **vnímatelné**, **ovladatelné**, **srozumitelné** a **stabilní**.
+
+
 </div>
 
  <div class="img-left">
@@ -23,19 +27,20 @@ title: Přístupnost
 
 
 ## Pravidla, zákony, předpisy
+dovolím si nerozvádět, pouze odkázat na spolehlivé zdroje informací:
 
-# dopracovat a vyladit!!
+### Legislativa v ČR
 
-dovolím si nerozvádět, pouze odkázat
+Přístupnost se u nás řeší zhruba od roku 2019, gestorem zákona o přístupnosti je <a href="https://www.mvcr.cz/clanek/pristupnost-internetovych-stranek-a-mobilnich-aplikaci.aspx" target="_blank" aria-label="nová stránka">Ministerstvo vnitra</a>.
 
-Přístupnost se u nás řeší zhruba od roku ***, předávám odkaz na 
-[Oficiální zdroje u nás](https://www.mvcr.cz/clanek/)
+Na jejich webu jsou podstatné informace, včetně <a href="https://www.mvcr.cz/clanek/pristupnost-internetovych-stranek-a-mobilnich-aplikaci.aspx?q=Y2hudW09Ng%3d%3d" target="_blank" aria-label="nová stránka"> zákona </a>a dalších předpisů či směrnic. Dlouhé čtení :(
 
-*oficiální zdroje ve světě:*
+
+### Legislativa mimo ČR
 
 mezinárodní standard Web Content Accessibility Guidelines (WCAG)
 https://www.w3.org/WAI/standards-guidelines/wcag/
-
+s
 
 *stojí za pozornost:*
 

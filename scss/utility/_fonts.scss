@@ -76,9 +76,11 @@ h2{
 }
 h3{
     font-size: 1.75em;
+    color: colors.$secondary-color;
 }
 
 blockquote{
+    font-family: variables.$font-blockquote;
     font-size: 1.2em;
     font-style: italic;
 }
@@ -106,7 +108,7 @@ blockquote{
     font-size: 0.8em;
     display: inline-block;
     padding: 0 5px;
-    background-color: #292929;
+    background-color: #4e4e4e;
     color: #eeeeee;
 }
 

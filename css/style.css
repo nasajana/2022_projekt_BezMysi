@@ -139,9 +139,11 @@ h2 {
 
 h3 {
   font-size: 1.75em;
+  color: #c3432f;
 }
 
 blockquote {
+  font-family: "Nunito", "Roboto", sans-serif;
   font-size: 1.2em;
   font-style: italic;
 }
@@ -169,7 +171,7 @@ blockquote {
   font-size: 0.8em;
   display: inline-block;
   padding: 0 5px;
-  background-color: #292929;
+  background-color: #4e4e4e;
   color: #eeeeee;
 }
 
@@ -492,7 +494,7 @@ blockquote {
 }
 
 .success__btn {
-  background-color: rgb(0, 70, 128);
+  background-color: #004680;
   color: rgb(174, 194, 22);
   padding: 20px;
 }
@@ -505,7 +507,7 @@ blockquote {
 }
 
 .btn-brand-color {
-  background-color: rgb(0, 70, 128);
+  background-color: #004680;
   color: #f0f5f9;
   text-decoration: none;
   font-size: 1.2em;
@@ -568,6 +570,9 @@ a:focus {
   background-color: #eb9b80;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   transform: translateY(-4px);
+}
+.card:hover h3 {
+  color: #0c5880;
 }
 .card img {
   margin: 0 30px;
