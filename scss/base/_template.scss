@@ -6,7 +6,7 @@ body{
 .my-template{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 60vh;
 
     
 }
@@ -15,7 +15,7 @@ body{
     flex: 1 1 100%;
     display: flex;
     @media screen and (min-width: variables.$min-xl-media) {
-        max-width: 1000px;
+        max-width: 1200px;
         margin:0 auto;
     }
 }

@@ -26,7 +26,7 @@ body {
 .my-template {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 .wrapper {
@@ -35,7 +35,7 @@ body {
 }
 @media screen and (min-width: 1100px) {
   .wrapper {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -289,7 +289,7 @@ blockquote {
 }
 
 .main {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .section {
