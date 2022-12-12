@@ -1,25 +1,27 @@
-// fonts
+/* fonts */
 
 $font-family-body:  "Montserrat", "Noto Sans", sans-serif;
 $font-family-headings: "Nunito", "Roboto", sans-serif;
 $font-blockquote: "Nunito", "Roboto", sans-serif;
 $font-weight-headings: 700;
 $font-weight-normal: 400;
-$font-size-default: 18px;
+$font-size-default: 16px;
 $line-height-default: calc(1.5em + 0.2vw);
 
 
-// media
+/* media */
 $min-xs-media: 768px;
 $max-xs-media: 799px;
 $min-md-media: 800px;
 $max-md-media: 1099px;
 $min-xl-media: 1100px;
 
-// spacers
+/* spacers */
 
 $space-s: 10px;
 $space-m: 15px;
 $space-l: 20px;
 $space-xl: 40px;
+
+
 

@@ -19,6 +19,9 @@ p {
   padding: 0;
 }
 
+/* fonts */
+/* media */
+/* spacers */
 body {
   margin: 0;
 }
@@ -26,43 +29,27 @@ body {
 .my-template {
   display: flex;
   flex-direction: column;
-  min-height: 60vh;
+  min-height: 100vh;
 }
 
-.wrapper {
-  flex: 1 1 100%;
-  display: flex;
-}
-@media screen and (min-width: 1100px) {
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+main {
+  width: min(90%, 1400px);
+  margin-inline: auto;
 }
 
 .spacer {
   margin: 1.5em;
 }
 
-/*
-.main{
-    flex: 1 1 75%;
-    padding: variables.$space-s; 
-}
-
-.r-sidebar{
-    flex: 1 1 25%;
-    padding: variables.$space-s;
-
-    @media (max-width: variables.$max-md-media) {
-        display: none;
-
-    }
-
-}
-*/
 .footer {
-  flex: 0 0 100px;
+  flex: 0 0 60px;
+}
+
+body {
+  font-family: "Montserrat", "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(1.5em + 0.2vw);
 }
 
 .center {
@@ -77,11 +64,7 @@ body {
   text-align: right;
 }
 
-p, a {
-  font-family: "Montserrat", "Noto Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(1.5em + 0.2vw);
+p {
   margin-top: 1em;
 }
 
@@ -108,19 +91,34 @@ a[target=_blank] {
   background-repeat: no-repeat;
 }
 
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
 h1,
 .section__header {
   font-family: "Nunito", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 3em;
+  font-size: 3rem;
   color: #0c5880;
 }
 
+h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+@media screen and (min-width: 1100px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 h1:after {
   content: "";
   display: block;
   height: 0.1em;
-  width: 3em;
+  width: 5rem;
   margin-top: 10px;
   background: #eb9b80;
 }
@@ -130,16 +128,27 @@ h3 {
   font-family: "Nunito", "Roboto", sans-serif;
   font-weight: 700;
   color: #0c5880;
-  margin-top: 40px;
+  margin-bottom: 1.25rem;
+  margin-top: 2rem;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.7rem;
+}
+@media screen and (min-width: 1100px) {
+  h2 {
+    font-size: 2.2rem;
+  }
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.5rem;
   color: #c3432f;
+}
+@media screen and (min-width: 1100px) {
+  h3 {
+    font-size: 1.8rem;
+  }
 }
 
 blockquote {
@@ -177,12 +186,8 @@ blockquote {
 
 .tips {
   background-color: #ffeeee;
-  padding: 20px;
-  text-align: center;
-  grid-column: 1/-1;
-}
-.tips p {
-  margin: 0;
+  padding: 1rem;
+  margin: 1rem auto;
 }
 .tips::before {
   background-image: url(/images/icons/light.png);
@@ -318,13 +323,40 @@ blockquote {
   text-align: center;
 }
 
-.main-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 32px;
+/*
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 32px;
+
+
+    &__header,
+    & .full-row{
+        grid-column: 1 / -1;
+    }
+
 }
-.main-grid__header, .main-grid .full-row {
-  grid-column: 1/-1;
+*/
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-card {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+  .flex-card {
+    flex-direction: row;
+  }
 }
 
 .main-nav {

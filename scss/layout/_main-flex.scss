@@ -1,1 +1,23 @@
 @use '../base/variables';
+
+.d-flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-card{
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: variables.$min-md-media) {
+        flex-direction: row;
+    }
+
+}

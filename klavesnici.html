@@ -3,37 +3,35 @@ layout: layouts/obsah.njk
 title: Klávesnicí na web
 ---
 
-<main class="main ">
+<main class="main article">
     <h1>{{title}}</h1>
+    <div>
+        <p>Kdo dá přednost klávesnici?</p>
+        <ul>
+            <li>člověk, kterému se třesou ruce, má šanci najít informace bez pomoci druhých</li>
+            <li>senior, kterému rychlé klikání činí potíže</li>
+            <li>slabozraký, který si stránku zvětší a lépe se po ní orientuje, když se obraz neposouvá</li>
+            <li>programátor, kterého nebaví přehmatávat na myš </li>
+            <li>člověk s motorickým handicapem, protože na kávesnici stačí i jeden prst</li>
+        </ul>
+        <p class="tips">Web by měl být použitelný do zvětšení 200%, to už nám na
+            stránkách naskakuje Hamburger menu... co myslíte, kolik procent webů řeší jeho přístupnost z
+            klávesnice? </p>
+    </div>
     <h2>Vidím kde jsem</h2>
     <div class="spacer"></div>
-    <div class="main-grid">
+    <div class="">
 
         <div>
             <p class="instruction"> Klávesou <span class="keyb">Tab</span>, anebo pozpátku <span
-                    class="keyb">Shift</span>+<span class="keyb">Tab</span>můžeme projít po webové stránce všechny
+                    class=  "keyb">Shift</span>+<span class="keyb">Tab</span>můžeme projít po webové stránce všechny
                 interaktivní prvky. Odkazy, tlačítka, zaškrtávací pole, editační pole (to je to políčko, kam píšete ve
                 vyhledávači). No... můžeme, pokud jsou správně vytvořené. A s jistotou, <strong>pokud vidíme, kde
                     jsme</strong>. </p>
             <blockquote class="blockquote">Víte, jak dokázal počítač ovládat geniální fyzik Stephen Hawking?
             </blockquote>
         </div>
-        <div>
-            <p>Pohyb po webu pouze s klávesnicí může volit člověk, který má třes rukou, omezenou hybnost, anebo je
-                úplně paralyzovaný a do klávesnice ťuká speciálním nástavcem. <br>Může jít i o lidi s horším zrakem, kdy
-                je prohledávání s myší pro ně náročné, často k tomu přidají zvětšení stránky až do takové míry, že
-                se jim zobrazí vzhled určený pro mobilní telefony. </p>
-            <p>Web by měl být použitelný do zvětšení 200%, to už nám na
-                stránkách naskakuje Hamburger menu... co myslíte, kolik procent webů řeší jeho přístupnost z
-                klávesnice? </p>
-        </div>
-        <div>
-            <video class="player" width="100%" height="300" poster="/images/zoom-web.png"
-                aria-label="správně zvýrazněný fokus" controls>
-                <source src="/images/example02.mp4" type="video/mp4">
-            </video><br>
-            použít ministerstvo vnitra anebo školství anebo zahr. obchod, doprava je taky pěkná
-        </div>
+
         <div>
             <h3>Zde se zdá být svět v pořádku</h3>
             <p>
@@ -43,6 +41,13 @@ title: Klávesnicí na web
                 <span class="kod">outline:0;</span>
                 a&nbsp;ničím ji nenahradí.
             </p>
+        </div>
+        <div>
+            <video class="player" width="100%" height="300" poster="/images/zoom-web.png"
+                aria-label="správně zvýrazněný fokus" controls>
+                <source src="/images/example02.mp4" type="video/mp4">
+            </video><br>
+            použít ministerstvo vnitra anebo školství anebo zahr. obchod, doprava je taky pěkná
         </div>
         <div>
             <h3>Zde se ztrácíme</h3>
@@ -78,7 +83,7 @@ title: Klávesnicí na web
                 Tlačítka lze potvrdit také<span class="keyb">mezerníkem</span>, pak tu máme různé další "udělátka",
                 o&nbsp;nich
                 více v&nbsp;<a href="/teorie/">teoretické části.</a></p>
-            <p>Vedle ukázka, kdy tabulátorem dojdeme k odkazu a&nbsp;ten potvrdíme.</p>
+
             <blockquote class="blockquote">Je to napínavé, když předem nevíte, co se po stisku <span
                     class="keyb">Enter</span> stane?</blockquote>
         </div>
@@ -101,10 +106,12 @@ title: Klávesnicí na web
             <p>Odkaz co zavede uživatele někam, odkud se nedokáže vrátit zpět, anebo stáhne
                 soubor a uživatel si toho ani nevšimne. Otevře vyskakovací okno a uživatel se nedokáže
                 do něj klávesnicí přesunout...</p>
-                <blockquote class="blockquote">Když máte chuť na burger, můžete si dát ten z&nbsp;masa, vegetariánský s&nbsp;náhražkou, anebo se podívat na obrázek burgeru... :) </blockquote>
+            <blockquote class="blockquote">Když máte chuť na burger, můžete si dát ten z&nbsp;masa, vegetariánský
+                s&nbsp;náhražkou, anebo se podívat na obrázek burgeru... :) </blockquote>
         </div>
         <div class="tips">
-            <p>Je vhodné uživateli naznačit, kdy odkaz vede na nový web a kdy nás "vyhodí" do jiného okna. <br>Často se používá
+            <p>Je vhodné uživateli naznačit, kdy odkaz vede na nový web a kdy nás "vyhodí" do jiného okna. <br>Často se
+                používá
                 ikonka <img style="height: 1em;" src="/images/icons/external-icon.png" alt=""> kterou můžete potkat
                 i na
                 tomto webu.</p>

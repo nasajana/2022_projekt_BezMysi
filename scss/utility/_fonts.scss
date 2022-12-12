@@ -1,7 +1,12 @@
 @use '../base/variables';
 @use '../utility/colors';
 
-
+body{
+    font-family: variables.$font-family-body;
+    font-weight: variables.$font-weight-normal;
+    font-size: variables.$font-size-default;
+    line-height: variables.$line-height-default;
+}
 .center{
     text-align: center;
 }
@@ -15,15 +20,9 @@
 }
 
 
-p, a{
-    font-family: variables.$font-family-body;
-    font-weight: variables.$font-weight-normal;
-    font-size: variables.$font-size-default;
-    line-height: variables.$line-height-default;
+p{
     margin-top: 1em;
-
 }
-
 
 p::selection{
     background-color: yellow;
@@ -43,40 +42,67 @@ a[target="_blank"] {
     background-repeat: no-repeat;
 }
 
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
 h1,
 .section__header{
     font-family: variables.$font-family-headings;
     font-weight: variables.$font-weight-headings;
-    font-size: 3em;
+    font-size: 3rem;
     color: colors.$primary-color;
 
 }
 
 h1{
+    margin-top: 2rem;
+    font-size: 2rem;
+
+    @media screen and (min-width: variables.$min-xl-media) {
+        font-size: 2.5rem;
+        
+    }
+
+
     &:after{
         content: '';
         display: block;
         height: 0.1em;
-        width: 3em;
+        width: 5rem;
         margin-top: 10px;
         background: colors.$accent;
     }
 
 }
+
 h2,
 h3{
     font-family: variables.$font-family-headings;
     font-weight: variables.$font-weight-headings;
     color: colors.$primary-color;
-    margin-top: variables.$space-xl;
+    margin-bottom: 1.25rem;
+    margin-top: 2rem;
+
 }
 
 h2{
-    font-size: 2em;
+    font-size: 1.7rem;
+
+    @media screen and (min-width: variables.$min-xl-media) {
+        font-size: 2.2rem;
+        
+    }
 }
 h3{
-    font-size: 1.75em;
+    font-size: 1.5rem;
     color: colors.$secondary-color;
+
+    @media screen and (min-width: variables.$min-xl-media) {
+        font-size: 1.8rem;
+        
+    }
 }
 
 blockquote{
@@ -114,13 +140,9 @@ blockquote{
 
 .tips{
     background-color: #ffeeee;
-    padding: 20px;
-    text-align: center;
-    & p{
-        margin: 0;
-    }
+    padding: 1rem;
+    margin: 1rem auto;
 
-    grid-column: 1 / -1;
     &::before{
         background-image: url(/images/icons/light.png);
         padding-left: 1.2em;
