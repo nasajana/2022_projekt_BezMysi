@@ -45,6 +45,14 @@ main {
   flex: 0 0 60px;
 }
 
+.separator {
+  display: block;
+  height: 2px;
+  width: 80%;
+  margin: 1rem auto;
+  background-color: silver;
+}
+
 body {
   font-family: "Montserrat", "Noto Sans", sans-serif;
   font-weight: 400;
@@ -100,7 +108,7 @@ ul {
 h1,
 .section__header {
   font-family: "Nunito", "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 3rem;
   color: #0c5880;
 }
@@ -126,7 +134,7 @@ h1:after {
 h2,
 h3 {
   font-family: "Nunito", "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   color: #0c5880;
   margin-bottom: 1.25rem;
   margin-top: 2rem;
@@ -266,6 +274,7 @@ blockquote {
 }
 .hero .text-bigger {
   font-size: clamp(24px, 3vw, 36px);
+  line-height: 2rem;
 }
 .hero .text-big {
   font-size: 32px;
@@ -294,6 +303,7 @@ blockquote {
 }
 .footer__content p {
   text-align: center;
+  font-size: small;
 }
 .footer__copy {
   background-color: #0c5880;
@@ -317,7 +327,8 @@ blockquote {
   padding-top: 10px;
 }
 .section__item {
-  padding: 10px;
+  padding: 1rem;
+  margin: 3rem auto;
 }
 .section__header {
   text-align: center;
@@ -526,7 +537,7 @@ blockquote {
 }
 
 .success__btn {
-  background-color: #004680;
+  background-color: #0c5880;
   color: rgb(174, 194, 22);
   padding: 20px;
 }
@@ -534,12 +545,13 @@ blockquote {
 .link-btn {
   display: inline-block;
   padding: 0.5em 2em;
-  border-radius: 2px;
+  border-radius: 50px;
   transition: all 0.3s;
+  margin: 2rem 0;
 }
 
 .btn-brand-color {
-  background-color: #004680;
+  background-color: #0c5880;
   color: #f0f5f9;
   text-decoration: none;
   font-size: 1.2em;
@@ -576,6 +588,7 @@ a:focus {
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  padding: 0;
 }
 @media screen and (min-width: 1100px) {
   .cards {
