@@ -21,3 +21,60 @@
     }
 
 }
+
+/* nastavení článku s obrázkem */
+
+.article{
+    margin-top: 3em;
+  }
+  
+  .article-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .article  .article-media:has(img){
+    width: clamp(250px, 30%, 300px)
+  }
+  
+  .article .article-media img{
+    width: 100%;
+  
+  }
+    
+  .article .article-media:has(video) {
+    aspect-ratio: 16/9;
+    flex-direction: column;
+  }
+  
+  .article-media img,
+  .article-media video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: auto;
+   
+  }
+  
+  @media screen and (min-width: variables.$min-md-media) {
+  
+    .article {
+      display: flex;
+      align-items: center;
+  
+    }
+  
+    .flex--right {
+      flex-direction: row-reverse;
+  
+    }
+  
+    .article-text {
+      flex: 1;
+      padding-left: 2em;
+      max-width: 80ch;
+  
+    }
+  }
+  

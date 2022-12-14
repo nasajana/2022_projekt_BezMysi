@@ -111,6 +111,7 @@ h1,
   font-weight: 400;
   font-size: 3rem;
   color: #0c5880;
+  line-height: 3rem;
 }
 
 h1 {
@@ -196,12 +197,7 @@ blockquote {
   background-color: #ffeeee;
   padding: 1rem;
   margin: 1rem auto;
-}
-.tips::before {
-  background-image: url(/images/icons/light.png);
-  padding-left: 1.2em;
-  background-position: left center;
-  background-repeat: no-repeat;
+  line-height: 3rem;
 }
 
 .header {
@@ -299,11 +295,6 @@ blockquote {
   color: #0c5880;
   max-width: 1400px;
   margin: auto;
-  padding: 40px 0;
-}
-.footer__content p {
-  text-align: center;
-  font-size: small;
 }
 .footer__copy {
   background-color: #0c5880;
@@ -319,9 +310,14 @@ blockquote {
   padding-top: 60px;
 }
 
+.w-80 {
+  max-width: 80%;
+  margin-inline: auto;
+}
+
 .section {
   max-width: 1000px;
-  margin: auto;
+  margin: 3rem auto;
 }
 .section p {
   padding-top: 10px;
@@ -370,6 +366,53 @@ blockquote {
   }
 }
 
+/* nastavení článku s obrázkem */
+.article {
+  margin-top: 3em;
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article .article-media:has(img) {
+  width: clamp(250px, 30%, 300px);
+}
+
+.article .article-media img {
+  width: 100%;
+}
+
+.article .article-media:has(video) {
+  aspect-ratio: 16/9;
+  flex-direction: column;
+}
+
+.article-media img,
+.article-media video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .article {
+    display: flex;
+    align-items: center;
+  }
+  .flex--right {
+    flex-direction: row-reverse;
+  }
+  .article-text {
+    flex: 1;
+    padding-left: 2em;
+    max-width: 80ch;
+  }
+}
 .main-nav {
   display: none;
 }

@@ -53,6 +53,7 @@ h1,
     font-weight: variables.$font-weight-headings;
     font-size: 3rem;
     color: colors.$primary-color;
+    line-height: 3rem;
 
 }
 
@@ -142,11 +143,6 @@ blockquote{
     background-color: #ffeeee;
     padding: 1rem;
     margin: 1rem auto;
+    line-height: 3rem;
 
-    &::before{
-        background-image: url(/images/icons/light.png);
-        padding-left: 1.2em;
-        background-position: left center;
-        background-repeat: no-repeat;
-    }
 }
