@@ -2,35 +2,125 @@
 layout: layouts/obsah.njk
 title: Teorie
 ---
+
 <main class="main">
     <h1>{{title}}</h1>
 
-# dopracovat a vyladit!!
 
-## Slovníček pojmů a odkazy na další zdroje
+    <section>
+        <h2>Vidím, kde jsem</h2>
+        <div class="w-80">
+            <p class="instruction"> Klávesou <span class="keyb">Tab</span>, anebo pozpátku <span
+                    class="keyb">Shift</span>+<span class="keyb">Tab</span>můžeme projít po webové stránce
+                všechny
+                interaktivní prvky. Odkazy, tlačítka, zaškrtávací pole, editační pole (to je to políčko, kam
+                píšete ve
+                vyhledávači). No... můžeme, pokud jsou správně vytvořené. A s jistotou, <strong>pokud vidíme,
+                    kde
+                    jsme</strong>. </p>
+            <blockquote class="blockquote">Napadlo by vás pozvat někoho na oběd a&nbsp;neposkytnout mu příbor?
+            </blockquote>
+        </div>
+    </section>
 
-**odečítač** někdy zvaný *čtečka*, anglicky *screenreader* je speciální software, který je buď součástí operačního systému, anebo je do něj dodatečně instalován. Sleduje pozici kurzoru a informaci ohlašuje **hlasovou syntézou**, anebo ji zobrazuje jako titulky na obrazovce, případně braillským písmem na speciální pomůcce **braillském řádku**. Může se stát, že každý z odečítačů hlási prvky trochu jiným způsobem a jeho upovídanost si uživatel může individuálně nastavit. Výsledkem je mnoho variant, jakpodrobnou informaci uživatel získá.
-Nejznámější odečítače jsou
-- Jaws a NVDA pro Windows
-- VoiceOver pro Mac a iOS
-- TalkBack pro Android
+    <section>
+        <h2>Chci akci</h2>
+        <div class="w-80">
+            <h3>Čím nahradit klikání myši?</h3>
+            <p>Klávesa <span class="keyb">Enter</span>, ta napadne každého jako první. Na tlačítka a zaškrtávací
+                pole by měl fungovat <span class="keyb">mezerník</span>. </p>
 
-*Poznámka: bezplatná demonstrační verze JAWS, vám umožní spustit JAWS po dobu 40 minut a poté restartovat. Podmínky použití **zkušební** verze JAWS však výslovně zakazují testování webových stránek*
+            <blockquote class="blockquote">Je mnoho webů, na kterých není nejmenší šance dostat se k rozblení
+                nabídky pomocí klávesnice.
+            </blockquote>
+        </div>
 
-*pro mne ke zpracování - návody a tipy k Jaws*
-https://www.freedomscientific.com/SurfsUp/Navigating.htm
-https://www.freedomscientific.com/SurfsUp/Elements.htm
+        <p class="tips center">Web by měl být použitelný do zvětšení 200%, to už nám na
+            stránkách naskakuje Hamburger menu... co myslíte, kolik procent webů řeší jeho přístupnost z&nbsp;
+            klávesnice?
+        </p>
 
+        <div class="w-80">
+            <h3>Tlačítko, co není tlačítkem</h3>
+            <p>Mnoho tlačítek je ve skutečnosti odkazem. Rozdíl je v tom, že tlačítkem <strong>potvrzuji
+                    akci</strong>, zatímco od odkazu očekávám, že mě někam odkáže. Namalovat v CSS lze cokoli.
+                Dokonce i prázdný prvek, kterému se "vyrobí" schopnosti tlačítka pomocí JavaScriptu.</p>
+            <blockquote class="blockquote">Když máte chuť na burger, můžete si dát ten z&nbsp;masa,
+                vegetariánský
+                s&nbsp;náhražkou, anebo se podívat na obrázek burgeru... :)
+            </blockquote>
+        </div>
 
-**hlasová syntéza** jsou hlasivky odečítače. Tak jako lidé, i hlasové syntézy mají mnoho jazykových mutací. (Pojmenované jsou lidskými jmény. V odečítači Narrator čili **Předčítání** se můžete setkat s českým hlasem *Jakub*, v iPhone na vás s odečítačem **VoiceOver** bude mluvit *Zuzana*, NVDA přebírá hlas z Windows, TalkBack ...)
+        <div class="w-80">
+            <h3>Kam míříš, odkaze?</h3>
+            <p>Odkaz co zavede uživatele někam, odkud se nedokáže vrátit zpět, anebo stáhne
+                soubor a uživatel si toho ani nevšimne. Otevře vyskakovací okno a uživatel se nedokáže
+                do něj klávesnicí přesunout...
+            </p>
+        </div>
 
-**braillský displej - braillský řádek** je speciální zařízení, na kterém je zobrazováno bodové braillské písmo pomocí malých zakulacených jehliček, které vystupují podle potřeby na povrch a tvoří řádek textu. Většinou se text shoduje s informací, kterou hlásí odečítač, ale hmatem uživatel mnohem tychleji zjistí, zda má v textu "y" anebo "i".
+        <div class="tips center">
+            <p>Je vhodné uživateli naznačit, například ikonkou <img style="height: 1em;"
+                    src="/images/icons/external-icon.png" alt="">, kdy odkaz vede na nový web a kdy ho "vyhodí"
+                do
+                jiného
+                okna. Je víc než vhodné naznačit, že dojde ke stažení souboru do počítače uživatele.
+            </p>
+        </div>
+    </section>
 
-## Příkazy z klávesnice 
-**Tabulátor** uživatele v ideálním případě dostane všude, kde je nějaká akce. V opačném směru je to Shift+Tab. Dostane nás na odkazy, tlačítka, zaškrtávací pole, editační pole pro psaní, rozbalovací seznamy…. Tedy téměř všude, kde můžeme něco podniknout. Pokud byl tvůrce laskavý, tak i víme, kde se nacházíme.
+    <section>
+        <h2>Speciální programy</h2>
+        <div class="w-80">
+            <h3>Odečítač</h3>
+            <p>někdy zvaný <em>čtečka</em>, anglicky <em>screenreader</em> je speciální software, který je buď
+                součástí operačního systému, anebo je do něj dodatečně
+                instalován. Sleduje pozici kurzoru a&nbsp;informaci ohlašuje <strong>hlasovou syntézou</strong>,
+                anebo ji
+                zobrazuje jako titulky na obrazovce, případně braillským písmem na speciální pomůcce
+                <strong>braillském řádku</strong>.
+            </p>
+            <p>Nejznámější odečítače, s odkazem vedoucím na český zdroj infomací:</p>
+            <ul>
+                <li> <a href="https://www.galop.cz/katalog_detail.php?produkt=25" target="_blank"
+                        aria-label="nové okno">Jaws</a> pro Windows</li>
+                <li> <a href="http://nvda-project.cz/" target="_blank" aria-label="nové okno">NVDA</a> pro
+                    Windows</li>
+                <li> <a href="https://support.apple.com/cs-cz/guide/voiceover/welcome/mac" target="_blank"
+                        aria-label="nové okno">VoiceOver</a> pro Mac a iOS</li>
+                <li> <a href="https://support.google.com/accessibility/android/answer/6007100?hl=cs&ref_topic=10601570"
+                        target="_blank" aria-label="nové okno">TalkBack</a> pro Android</li>
+            </ul>
+        </div>
 
-**Mezerník** má svůj význam jako klávesa pro zaškrtávání políček a stisk tlačítek. Pokud se odkaz použije jako tlačítko (https://jecas.cz/odkaz-tlacitko), potřebuje mít také jeho vlastnosti.
+        <div class="tips center">
+            <p>V&nbsp;nastavení svého chytrého telefonu určitě najdete ikonku <img
+                    style="height: 1.5rem; display: inline-block;" src="/images/icons/accessbl.svg"
+                    alt="ikona přístupnosti">
 
-**Enter** 
+                která skrývá možnosti přizpůsobení pro různé typy handicapů.
+            </p>
+        </div>
+
+        <div class="w-80">
+            <h3>Hlasová syntéza</h3>
+            <p>jsou "hlasivky" odečítače. Tak jako lidé, i hlasové syntézy mají mnoho jazykových mutací.
+                (Pojmenované jsou lidskými jmény. V&nbsp;odečítači Narrator čili
+                <strong>Předčítání</strong> se můžete setkat s českým hlasem <em>Jakub</em>, v&nbsp;iPhone na
+                vás s&nbsp;odečítačem <strong>VoiceOver</strong> bude mluvit <em>Zuzana</em>, NVDA přebírá hlas
+                z&nbsp;Windows, TalkBack ...)
+            </p>
+        </div>
+
+        <div class="w-80">
+            <h3>Braillský displej</h3>
+            <p>je speciální zařízení, na kterém je zobrazováno
+                bodové braillské písmo pomocí malých zakulacených jehliček, které vystupují podle
+                potřeby na povrch a&nbsp;tvoří řádek textu. Většinou se text shoduje s&nbsp;informací, kterou
+                hlásí odečítač, ale
+                hmatem uživatel mnohem tychleji zjistí, zda má v&nbsp;textu &quot;y&quot; anebo &quot;i&quot;.
+            </p>
+        </div>
+    </section>
 
 </main>
