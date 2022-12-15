@@ -137,8 +137,8 @@ h3 {
   font-family: "Nunito", "Roboto", sans-serif;
   font-weight: 400;
   color: #0c5880;
-  margin-bottom: 1.25rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 
 h2 {
@@ -289,7 +289,7 @@ blockquote {
 
 .footer {
   background-color: #e2e2e2;
-  margin-top: 40px;
+  margin-top: 5em;
 }
 .footer__content {
   color: #0c5880;
@@ -330,20 +330,31 @@ blockquote {
   text-align: center;
 }
 
-/*
-.main-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 32px;
-
-
-    &__header,
-    & .full-row{
-        grid-column: 1 / -1;
-    }
-
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
 }
-*/
+
+.grid__item {
+  padding: 1rem;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.flag {
+  width: 100%;
+  max-width: 150px;
+}
+
+.full-grid {
+  grid-column: 1/-1;
+}
+
+.container-grid a[target=_blank] {
+  background-image: none;
+}
+
 .d-flex {
   display: flex;
 }
@@ -367,8 +378,10 @@ blockquote {
 }
 
 /* nastavení článku s obrázkem */
-.article {
+.article,
+section {
   margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .article-text {

@@ -24,8 +24,10 @@
 
 /* nastavení článku s obrázkem */
 
-.article{
+.article,
+section{
     margin-top: 3em;
+    margin-bottom: 3em;
   }
   
   .article-text{
