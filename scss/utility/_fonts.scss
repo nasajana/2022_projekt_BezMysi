@@ -20,10 +20,6 @@ body{
 }
 
 
-p{
-    margin-top: 1em;
-}
-
 p::selection{
     background-color: yellow;
     color: rgb(115, 49, 2);
@@ -141,8 +137,13 @@ blockquote{
 
 .tips{
     background-color: #ffeeee;
-    padding: 1rem;
     margin: 1rem auto;
     line-height: 3rem;
 
+}
+
+.accessbl-icon{
+    height: 1.5rem; 
+    display: inline-block;
+    margin-bottom: -5px;
 }
