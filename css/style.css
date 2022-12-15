@@ -215,8 +215,8 @@ blockquote {
   /* flex-direction: column;*/
   max-width: 1400px;
   min-height: 60px;
-  margin: auto;
-  padding: 15px;
+  margin-inline: auto;
+  padding: 15px 15px 0;
 }
 @media screen and (min-width: 800px) {
   .header__content {
@@ -430,31 +430,36 @@ section {
 @media screen and (min-width: 800px) {
   .main-nav {
     display: flex;
+    align-self: center;
   }
 }
-
-.menu {
+.main-nav .menu {
   margin: 0;
   padding: 0;
   display: flex;
 }
-
-.main-menu {
-  list-style: none;
-  margin: 0.75em 0;
-}
-.main-menu a {
+.main-nav .menu__item {
+  border-bottom: 3px solid transparent;
   display: block;
   padding: 0 10px;
-  color: #b1cce0;
+}
+.main-nav .menu__item:hover, .main-nav .menu__item--active {
+  border-bottom: 3px solid #f0f5f9;
+  color: #f0f5f9;
+  transition: all 0.5s;
+}
+.main-nav .menu__item a {
+  color: #f1f1f1;
   text-decoration: none;
   font-size: 1.2em;
-  border-bottom: 3px solid transparent;
 }
-.main-menu a:hover, .main-menu a:focus {
-  border-bottom: 3px solid #f0f0f0;
-  color: #f0f0f0;
+.main-nav .menu__item a:focus {
   transition: all 0.5s;
+  outline-offset: 4px;
+}
+.main-nav .menu__item__list {
+  list-style: none;
+  margin: 0.75em 0;
 }
 
 .secondary-menu {
@@ -485,7 +490,7 @@ section {
   /*   position: absolute;*/
   top: 10px;
   left: 10px;
-  color: rgb(34, 206, 18);
+  color: rgb(254, 254, 254);
   transition: transform 0.5s ease;
 }
 
@@ -518,7 +523,10 @@ section {
 /* Make the focusable elements in the drawer visible when it is open. */
 .hamburger-container .checkbox:checked ~ .drawer a {
   visibility: visible;
-  color: #b1cce0;
+  color: #f1f1f1;
+}
+.hamburger-container .checkbox:checked ~ .drawer a:hover {
+  text-decoration: underline;
 }
 
 .hamburger-container .checkbox:checked ~ .drawer {
@@ -539,13 +547,12 @@ section {
 
 .hamburger {
   width: 32px;
-  height: 32px;
+  /*height: 32px;*/
   position: relative;
   display: block;
   transition: transform 0.5s ease;
   z-index: 1;
   cursor: pointer;
-  padding-top: 5px;
 }
 
 .hamburger .slice {
@@ -606,13 +613,13 @@ section {
 
 .btn-brand-color {
   background-color: #0c5880;
-  color: #f0f5f9;
+  color: #f1f1f1;
   text-decoration: none;
   font-size: 1.2em;
 }
 .btn-brand-color:hover, .btn-brand-color:focus {
-  background-color: #eb9b80;
-  color: #0c5880;
+  background-color: #A1C5D7;
+  color: #172027;
 }
 
 a {

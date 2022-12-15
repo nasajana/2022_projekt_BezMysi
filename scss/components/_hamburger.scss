@@ -14,7 +14,8 @@
  /*   position: absolute;*/
     top: 10px;
     left: 10px;
-    color: rgb(34, 206, 18);
+
+    color: rgb(254, 254, 254);
     transition: transform 0.5s ease;
   }
   
@@ -49,7 +50,11 @@
   .hamburger-container .checkbox:checked ~ .drawer a {
     visibility: visible;
     // vlastní barva odkazů
-    color: colors.$lightbluegray;
+    color: colors.$off-white;
+
+    &:hover{
+      text-decoration: underline;
+    }
   }
   
   .hamburger-container .checkbox:checked ~ .drawer {
@@ -70,13 +75,12 @@
   
   .hamburger {
     width: 32px;
-    height: 32px;
+    /*height: 32px;*/
     position: relative;
     display: block;
     transition: transform 0.5s ease;
     z-index: 1;
     cursor: pointer;
-    padding-top: 5px;
   }
   
   .hamburger .slice {

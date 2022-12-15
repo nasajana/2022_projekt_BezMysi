@@ -1,19 +1,20 @@
 // colors
-$btn-color: #0c5880;
-$btn-light-color: #5195b4;
-$active-button-color: #8d2616;
-$bg-color: #f0f0f0;
-$bg-silver:#e2e2e2;
-$bg-dark-color: #303339;
-$accent:#eb9b80;
-
-
-
 $primary-color: #0c5880;
 $secondary-color: #c3432f;
-$text-color: #172027;
+
+$bg-silver:#e2e2e2;
+$bg-dark-color: #303339;
 $bg-light: #f0f5f9;
+$off-white: #f1f1f1;
 $danger: #8b2616;
 $warning: #ff794d;
 $lightbluegray: #b1cce0;
 $bluegray: #8ab1cc;
+
+
+
+$text-color: #172027;
+$bg-color: $bg-light;
+$btn-color: $primary-color;
+$btn-light-color: #A1C5D7;
+$accent:#eb9b80;

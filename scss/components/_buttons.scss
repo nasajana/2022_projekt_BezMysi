@@ -17,13 +17,13 @@
 
 .btn-brand-color{
     background-color: colors.$btn-color;
-    color: colors.$bg-light;
+    color: colors.$off-white;
     text-decoration: none;
     font-size: 1.2em;
 
     &:hover,
     &:focus{
-        background-color: colors.$accent;
-        color: colors.$primary-color;
+        background-color: colors.$btn-light-color;
+        color: colors.$text-color;
     }
 }
