@@ -190,7 +190,7 @@ blockquote {
 .tips {
   background-color: #ffeeee;
   margin: 1rem auto;
-  line-height: 3rem;
+  padding: 10px;
 }
 
 .accessbl-icon {
