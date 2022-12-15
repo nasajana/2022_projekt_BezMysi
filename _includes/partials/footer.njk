@@ -1,8 +1,12 @@
 <footer class="footer">
     <div class="footer__content">
-        {% include 'partials/koder.njk' %}
+        {% if title !== 'Kontakt' %}
+            <!-- ↓ koder ↓ -->
+            {% include 'partials/koder.njk' %}
+            <!-- ↑ koder ↑ -->
+        {% endif %}
     </div>
-    <div class="footer__copy center">
+    <div class="footer__copy">
         <p>BezMyši | vytvořeno pro Závěrečný projekt kurzu KODÉRKA | 2022 | Jana Smolná | info@nasajana.cz</p>
     </div>
 </footer>

@@ -35,6 +35,7 @@ body {
 main {
   width: min(90%, 1400px);
   margin-inline: auto;
+  margin-bottom: 5em;
 }
 
 .spacer {
@@ -289,7 +290,6 @@ blockquote {
 
 .footer {
   background-color: #e2e2e2;
-  margin-top: 5em;
 }
 .footer__content {
   color: #0c5880;
