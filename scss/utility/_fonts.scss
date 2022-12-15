@@ -113,19 +113,20 @@ blockquote{
     padding: 15px;
     margin-top: 1em;
     margin-bottom: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .keyb {
     display: inline-block;
     font-size: 0.8em;
-    line-height: 1.4em;
+    /*line-height: 1.4em;*/
     color: #36395A;
     padding: 0 8px;
     margin: 0 5px;
-    border: 1px solid #d8d8d8;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;}
-  
+    border-radius: 2px;
+    box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(208 208 208 / 22%) 0px 1px 20px 0px, #cbcbcb 0 -3px 0 inset;
 
+}
 .kod{
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.8em;

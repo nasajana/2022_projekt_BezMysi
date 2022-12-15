@@ -17,6 +17,9 @@
     &__item{
         padding: 1rem;
         margin: 3rem auto;
+        background-color: colors.$off-white;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
     }
     &__header{
