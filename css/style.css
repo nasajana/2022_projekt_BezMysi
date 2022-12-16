@@ -352,10 +352,6 @@ blockquote {
   grid-column: 1/-1;
 }
 
-.container-grid a[target=_blank] {
-  background-image: none;
-}
-
 .d-flex {
   display: flex;
 }
@@ -381,8 +377,8 @@ blockquote {
 /* nastavení článku s obrázkem */
 .article,
 section {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .article-text {
