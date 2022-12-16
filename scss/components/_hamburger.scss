@@ -51,6 +51,7 @@
     visibility: visible;
     // vlastní barva odkazů
     color: colors.$off-white;
+    font-size: 2em;
 
     &:hover{
       text-decoration: underline;

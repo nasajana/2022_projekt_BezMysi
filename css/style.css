@@ -54,7 +54,7 @@ body {
   font-family: "Montserrat", "Noto Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: calc(1.5rem + 0.2vw);
+  line-height: calc(1.5em + 0.2vw);
 }
 
 .center {
@@ -95,7 +95,7 @@ h1,
   font-weight: 400;
   font-size: 3rem;
   color: #0c5880;
-  line-height: 3rem;
+  line-height: 1.2em;
 }
 
 h1 {
@@ -260,7 +260,7 @@ blockquote {
 }
 .hero .text-bigger {
   font-size: clamp(24px, 3vw, 36px);
-  line-height: 2rem;
+  line-height: 1.5em;
 }
 .hero .text-big {
   font-size: 32px;
@@ -402,6 +402,7 @@ blockquote {
 section {
   margin-top: 5em;
   margin-bottom: 5em;
+  padding: 10px;
 }
 
 .article-text {
@@ -544,6 +545,7 @@ section {
 .hamburger-container .checkbox:checked ~ .drawer a {
   visibility: visible;
   color: #f1f1f1;
+  font-size: 2em;
 }
 .hamburger-container .checkbox:checked ~ .drawer a:hover {
   text-decoration: underline;
