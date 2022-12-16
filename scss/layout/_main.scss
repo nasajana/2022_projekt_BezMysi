@@ -9,3 +9,40 @@
     max-width: 80%;
     margin-inline: auto;
   }
+
+
+/* skok na hlavní oblast*/
+  #skiptocontent a {
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 8px;
+    background: #9c2700;
+    transition: top 1s ease-out;
+    z-index: 100;
+  }
+
+
+#skiptocontent a:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    outline-color: transparent;
+    -webkit-transition: top .1s ease-in;
+    transition: top .1s ease-in;
+}
+
+/* skrytý nadpis 1 na hmpg */
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
