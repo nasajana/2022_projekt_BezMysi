@@ -1,7 +1,6 @@
 @use '../utility/colors';
 
 
-
 a{
     text-decoration: underline;
     &:hover{
@@ -11,4 +10,20 @@ a{
         text-decoration: none;
         outline: 3px dotted colors.$warning;
     }
+}
+
+
+
+a[target="_blank"] {
+    background-image: url(/images/icons/external-icon.png);
+    background-size: 0.75em;
+    display: inline-block;
+    padding-right: 1.2em;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.no-icon{
+    background-image: none!important;
+
 }

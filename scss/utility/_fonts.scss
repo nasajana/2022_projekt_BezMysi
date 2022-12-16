@@ -29,14 +29,6 @@ a{
     color: colors.$primary-color;
 }
 
-a[target="_blank"] {
-    background-image: url(/images/icons/external-icon.png);
-    background-size: 0.75em;
-    display: inline-block;
-    padding-right: 1.2em;
-    background-position: right center;
-    background-repeat: no-repeat;
-}
 
 ul {
     margin-top: 0;
